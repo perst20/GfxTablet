@@ -193,7 +193,7 @@ int main(void)
 				// button 2
 				if (ev_pkt.button == 2)
 					send_event(device, EV_KEY, BTN_STYLUS2, ev_pkt.down);
-				printf("sent button: %hhi, %hhu\n", ev_pkt.button, ev_pkt.down);
+				//printf("sent button: %hhi, %hhu\n", ev_pkt.button, ev_pkt.down);
 				send_event(device, EV_SYN, SYN_REPORT, 1);
 				break;
 
